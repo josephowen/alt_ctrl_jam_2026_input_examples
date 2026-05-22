@@ -1,0 +1,211 @@
+[gd_scene format=3 uid="uid://dtielavgxym3d"]
+
+[ext_resource type="Script" uid="uid://d2khswlu1se71" path="res://mouse_example/mouse_example.gd" id="1_jvqo8"]
+[ext_resource type="Script" uid="uid://bo1mw0o75ry64" path="res://mouse_example/color_square.gd" id="2_etu00"]
+
+[sub_resource type="Gradient" id="Gradient_jvqo8"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.1746988, 0.5180723)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_etu00"]
+gradient = SubResource("Gradient_jvqo8")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="MouseExample" type="Control" unique_id=1292782919]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jvqo8")
+
+[node name="Background" type="ColorRect" parent="." unique_id=252424499]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.45, 0.45, 0.45, 1)
+
+[node name="Stripes" type="VBoxContainer" parent="." unique_id=1200131699]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Red" type="ColorRect" parent="Stripes" unique_id=959152158]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 0.11372549, 0.14509805, 1)
+script = ExtResource("2_etu00")
+
+[node name="Orange" type="ColorRect" parent="Stripes" unique_id=395955611]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.99607843, 0.5803922, 0.11372549, 1)
+script = ExtResource("2_etu00")
+
+[node name="Yellow" type="ColorRect" parent="Stripes" unique_id=2102480571]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 1, 0, 1)
+script = ExtResource("2_etu00")
+
+[node name="Green" type="ColorRect" parent="Stripes" unique_id=541863812]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.023529412, 0.7411765, 0.007843138, 1)
+script = ExtResource("2_etu00")
+
+[node name="Blue" type="ColorRect" parent="Stripes" unique_id=1186565716]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.003921569, 0.101960786, 0.59607846, 1)
+script = ExtResource("2_etu00")
+
+[node name="Purple" type="ColorRect" parent="Stripes" unique_id=1098684523]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.4627451, 0.003921569, 0.53333336, 1)
+script = ExtResource("2_etu00")
+
+[node name="Background2" type="ColorRect" parent="." unique_id=1114353978]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 159.35893
+offset_top = -159.35893
+offset_right = 1148.4658
+offset_bottom = -250.31622
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+
+[node name="Black" type="ColorRect" parent="." unique_id=1006326720]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 159.35893
+offset_top = -159.35893
+offset_right = 1148.4658
+offset_bottom = -250.31622
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0, 0, 0, 1)
+script = ExtResource("2_etu00")
+
+[node name="Background3" type="ColorRect" parent="." unique_id=1282867013]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 79.62304
+offset_top = -79.62304
+offset_right = 955.67303
+offset_bottom = -283.34424
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+
+[node name="Brown" type="ColorRect" parent="." unique_id=711020289]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 79.62304
+offset_top = -79.62304
+offset_right = 955.67303
+offset_bottom = -283.34424
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.3764706, 0.21960784, 0.078431375, 1)
+script = ExtResource("2_etu00")
+
+[node name="Background4" type="ColorRect" parent="." unique_id=1310241892]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -6.1035156e-05
+offset_top = 6.1035156e-05
+offset_right = 763.67505
+offset_bottom = -316.325
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+
+[node name="LightBlue" type="ColorRect" parent="." unique_id=1178661418]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -6.1035156e-05
+offset_top = 6.1035156e-05
+offset_right = 763.67505
+offset_bottom = -316.325
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.45882353, 0.8392157, 0.9254902, 1)
+script = ExtResource("2_etu00")
+
+[node name="Background5" type="ColorRect" parent="." unique_id=1621243665]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -80.23557
+offset_top = 80.23557
+offset_right = 570.44763
+offset_bottom = -349.5597
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+
+[node name="Pink" type="ColorRect" parent="." unique_id=1254457461]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -80.23557
+offset_top = 80.23557
+offset_right = 570.44763
+offset_bottom = -349.5597
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.99607843, 0.6862745, 0.78039217, 1)
+script = ExtResource("2_etu00")
+
+[node name="Background6" type="ColorRect" parent="." unique_id=101886035]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -160.11844
+offset_top = 160.11844
+offset_right = 377.0831
+offset_bottom = -382.6482
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+
+[node name="White" type="ColorRect" parent="." unique_id=1751220291]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -160.11844
+offset_top = 160.11844
+offset_right = 377.0831
+offset_bottom = -382.6482
+grow_vertical = 2
+rotation = 0.7853982
+color = Color(0.9843137, 0.96862745, 0.95686275, 1)
+script = ExtResource("2_etu00")
+
+[node name="Cursor" type="Sprite2D" parent="." unique_id=1131383760]
+texture = SubResource("GradientTexture2D_etu00")
