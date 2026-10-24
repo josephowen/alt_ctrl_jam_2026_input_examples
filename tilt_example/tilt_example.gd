@@ -24,7 +24,7 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("next"):
-		get_tree().change_scene_to_file("res://mouse_example/mouse_example.tscn")
+		get_tree().change_scene_to_file("res://debug_example/debug_example.tscn")
 		
 	if Input.is_action_just_pressed("exit"):
 		get_tree().quit()
